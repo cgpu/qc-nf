@@ -19,7 +19,10 @@ Channel
 ---------------------------------------------------*/
 
 process fastqc {
+  label 'med_resources'
+
   tag "$name"
+
   publishDir params.outdir, mode: 'copy'
 
   input:
